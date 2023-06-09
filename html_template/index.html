@@ -10,5 +10,43 @@
         <h1>Ada Tech School</h1>
 
         <script src="js/script.js"></script>
+        <!-- <script>  
+            function ageCalculator() {  
+                var dateSaisie = document.getElementById("dt").value;  
+                var dt = new Date(dateSaisie);  
+                if(dateSaisie==null || dateSaisie=='') { 
+                    /* si aucune date n’est saisie affichage du message qui demande de le faire.*/
+                  document.getElementById("message").innerHTML = "**Choisissez une date s'il vous plaît!";    
+                  return false;   
+                } else {  
+                  
+                //calculer la différence entre la date actuelle et la date saisie.  
+                var ma_diff = Date.now() - dt.getTime();  
+                  
+                //calculer la différence entre la date actuelle et la date saisie. 
+                var age_dt = new Date(ma_diff);  
+                  
+                //extract year from date      
+                var an = age_dt.getUTCFullYear();  
+                  
+                //calculer maintenant l'âge de l'utilisateur 
+                var age = Math.abs(an - 1970);  
+                  
+                //afficher l'âge calculé 
+                return document.getElementById("result").innerHTML =    
+                         "Vous avez: " + age + " ans. ";  
+                }  
+            }  
+            </script>  
+            
+            <center>  
+            <h2 style="color: red" align="center"> Quel est votre date de naissance ? <br> <br> </h2>   
+              
+            <!-- Choisissez une date et entrez-la dans le champ de saisie -->  
+            <!-- <b> Entrer votre date de naissance: <input type=date id = "dt"> </b>  
+            <span id = "message" style="color:red"> </span> <br><br>    
+              <button type="submit" onclick = "ageCalculator()"> Calculer l'age </button> <br><br>  
+            <h3 style="color:red" id="result" align="center"></h3>   
+            </center> -->
     </body>
 </html>
